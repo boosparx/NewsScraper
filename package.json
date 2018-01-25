@@ -1,0 +1,31 @@
+{
+  "name": "nyt-react-hw",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.9",
+    "request": "^2.83.0"
+  },
+  "scripts": {
+    "start": "node server/server.js",
+    "watch": "nodemon server/server.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+  },
+  "proxy": "http://localhost:4000",
+  "description": "News Scaper",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boosparx/NewsScraper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boosparx/NewsScraper/issues"
+  },
+  "homepage": "https://github.com/boosparx/NewsScraper#readme"
+}
